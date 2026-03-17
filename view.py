@@ -382,7 +382,7 @@ class TurnipView:
             margin=dict(l=20, r=20, t=30, b=20),
             hovermode="x unified"
         )
-        st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})
+        st.plotly_chart(fig, width='stretch', config={'displayModeBar': False})
 
     def display_summary(self, result_dict, base_date, matrix_df):
         """推奨アクションと共有テキスト"""
